@@ -4,6 +4,12 @@ plugins {
     id 'idea' // optional (to generate IntelliJ IDEA project files)
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 repositories {
     mavenCentral()
 }
